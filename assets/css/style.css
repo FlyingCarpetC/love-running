@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     /*Gdeneric project styles*/
     color: #3a3a3a;
-    font-family: "Lato", dans-serif;
+    font-family: "Oswald", sans-serif;
 
 }
 
@@ -26,6 +26,9 @@ header {
     background-color: lightcoral;
 }
 
+h1 {
+    font-family: "Oswald", sans-serif;
+}
 /*Main Content*/
 main {
     background-color: lightblue;
