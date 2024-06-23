@@ -4,9 +4,9 @@
 
 /*Asterisk wildcard selector to override default styles added by the browser */
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /*Generic styles */
@@ -26,7 +26,7 @@ header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
-    z-index: 99%;
+    z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
@@ -52,11 +52,11 @@ h1 {
     list-style-type: none;
 }
 
-menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
-.active  {
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
@@ -68,13 +68,14 @@ nav {
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
     top: 100%;
-    }
+}
 
 /*Nav toggle*/
 #nav-toggle:checked~nav {
     display: block;
-    }
+}
 
 /*hide checkbox*/
 #nav-toggle {
@@ -95,40 +96,55 @@ main {
 }
 
 /*Footer*/
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
-/*Media query: tablets and larger (768pxand up)*/
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
     nav {
-    /*Header*/
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-}
-#menu {
-    display: flex;
-}
+        /*Header*/
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
-    menu > li {
+#menu {
+        display: flex;
+    }
+
+#menu>li {
         padding-left: 1rem;
     }
 
-#logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin: 0 0.5rem;
+.nav-toggle-label {
+        display: none;
     }
-}
 
-/*Main Content*/
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 
-main {
-    /*push main content down to accomodate larger header*/
-    margin-top: 79px;
+    /*Main Content*/
+
+    main {
+        /*push main content down to accomodate larger header*/
+        margin-top: 79px;
+    }
 }
 
 /*Large devices (laptops and ddesktops, 992px and up)*/
